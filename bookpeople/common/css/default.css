@@ -1,0 +1,18 @@
+.scr {
+  overflow: scroll;   /* スクロール表示 */
+  width: 100%;
+  height: 500px;
+  background-color: #ccc;
+}
+.vsb {
+  overflow: visible;  /* はみ出して表示 */
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+.hdn {
+  overflow: hidden;   /* はみ出さず表示 */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
