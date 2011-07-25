@@ -2,7 +2,7 @@ facebook-php-sdk-v3.0.1
 Smarty-3.0.8
 HTML_QuickForm3.2.12
 
----memo-----
+-----memo-----
 
 Eclipseでgitプラグインの使い方
 http://fenrir.naruoka.org/archives/000697.html
