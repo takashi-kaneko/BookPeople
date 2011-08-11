@@ -53,7 +53,7 @@ if (isset($friendsList)) {
 	    foreach ($value as $fkey=>$fvalue) {
 	        $i++;
 	        $friendsData = $friendsData . '<a href="http://www.facebook.com/profile.php?id='.$fvalue['id'].'" target="_blank"><img src="https://graph.facebook.com/' . $fvalue['id'] . '/picture" border="0" title="' . $fvalue['name'].'"/></a>  ';
-	        if ($i % 13 == 0) { $friendsData = $friendsData .  '<br><br>';}
+	        if ($i % 10 == 0) { $friendsData = $friendsData .  '<br><br>';}
 	    }
 	}
 }

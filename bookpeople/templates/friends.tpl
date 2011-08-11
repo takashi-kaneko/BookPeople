@@ -24,26 +24,26 @@
         ああああ
     </div>
     <div id="fragment-2">
-        本棚本棚本棚本棚本棚本棚本棚
+        本棚
     </div>
     <div id="fragment-3">
-<form {$form.attributes}>
-{if $user ne ''}
-    <h4>You</h4>
-    <img src="https://graph.facebook.com/{$user}/picture">
-    <h4>{$count} Friends </h4>
-    <DIV class="scr">
-{$friendsData}
-	</DIV>
+    <form {$form.attributes}>
+    {if $user ne ''}
+        <h4>You</h4>
+        <img src="https://graph.facebook.com/{$user}/picture">
+        <h4>{$count} Friends </h4>
+        <DIV class="scr">
+    {$friendsData}
+        </DIV>
 
-{else}
-    <a href="{$login_url}">Login</a>
-{/if}
-{$form.comment.html}
-{$comment_text}
-<a href="{$logout_url}">Logout</a>
+    {else}
+        <a href="{$login_url}">Login</a>
+    {/if}
+    {$form.comment.html}
+    {$comment_text}
+    <a href="{$logout_url}">Logout</a>
 
-</form>
+    </form>
     </div>
 </div>
 
