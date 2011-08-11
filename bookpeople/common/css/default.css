@@ -1,3 +1,6 @@
+body {
+  font-size:62.5%;
+}
 .scr {
   overflow: scroll;   /* スクロール表示 */
   width: 100%;

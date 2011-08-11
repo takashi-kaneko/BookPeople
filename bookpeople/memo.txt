@@ -1,1 +1,11 @@
-aabcav
+Smarty
+http://www.smarty.net/download
+Smarty-3.0.8.zip
+libs配下
+
+cd C:\Eclipse\pleiades-e3.6-ultimate-jre_20110326\xampp\php
+pear install HTML_QuickForm
+sa再起動
+PHP5.3では
+php.ini
+error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED
