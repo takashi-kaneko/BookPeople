@@ -14,7 +14,16 @@
 </script>
 </HEAD>
 <BODY>
+<table>
+<tr>
+<td valign="top" align="center">
+    <h4>{$yourName}</h4>
+    <img src="https://graph.facebook.com/{$user}/picture?type=large">
+
+</td>
+<td valign="top" align="center">
 <div id="tabs">
+    <img src="images/dot.gif" width="550" height="1"><br>
     <ul>
         <li><a href="#fragment-1"><span>あいう</span></a></li>
         <li><a href="#fragment-2"><span>本棚</span></a></li>
@@ -29,8 +38,6 @@
     <div id="fragment-3">
     <form {$form.attributes}>
     {if $user ne ''}
-        <h4>You</h4>
-        <img src="https://graph.facebook.com/{$user}/picture">
         <h4>{$count} Friends </h4>
         <DIV class="scr">
     {$friendsData}
@@ -46,6 +53,8 @@
     </form>
     </div>
 </div>
-
+</td>
+</tr>
+</table>
 </BODY>
 </HTML>

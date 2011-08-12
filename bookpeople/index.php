@@ -10,8 +10,8 @@ $form = new HTML_QuickForm('submitForm', 'POST');
 $comment = array();
 
 $facebook = new Facebook(array(
-  'appId'  => '168661646534148',
-  'secret' => '1209c7c6fb1cdf86c3b39d30af879950',
+  'appId'  => '100782866691110',
+  'secret' => 'dbff2ad6390fd6610f384abdcd30c9db',
 ));
 
 
@@ -44,6 +44,7 @@ if ($user) {
     $par = array('scope' => 'publish_stream,read_friendlists');
     $login_url = $facebook->getLoginUrl($par);
 }
+$yourName = $user_profile['name'];
 $friendsData = '';
 $count='0';
 if (isset($friendsList)) {
@@ -53,7 +54,7 @@ if (isset($friendsList)) {
 	    foreach ($value as $fkey=>$fvalue) {
 	        $i++;
 	        $friendsData = $friendsData . '<a href="http://www.facebook.com/profile.php?id='.$fvalue['id'].'" target="_blank"><img src="https://graph.facebook.com/' . $fvalue['id'] . '/picture" border="0" title="' . $fvalue['name'].'"/></a>  ';
-	        if ($i % 10 == 0) { $friendsData = $friendsData .  '<br><br>';}
+	        if ($i % 9 == 0) { $friendsData = $friendsData .  '<br><br>';}
 	    }
 	}
 }
@@ -68,7 +69,7 @@ $objRenderer =& new HTML_QuickForm_Renderer_ArraySmarty($smarty);
 $form->accept($objRenderer);
 $smarty->assign('form',$objRenderer->toArray());
 
-
+$smarty->assign('yourName', $yourName);
 $smarty->assign('friendsData', $friendsData);
 $smarty->assign('count', $count);
 
