@@ -6,8 +6,8 @@
 </HEAD>
 <body>
 <form {$form.attributes}>
-ようこそ、{$name}さん<br />
+{$message}<br />
 HelloWorld！
-{$form.buttonSeat.html}
+{$form.buttonValue.html}
 </form>
 </body>
